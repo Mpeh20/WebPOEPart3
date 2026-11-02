@@ -13,6 +13,8 @@
         rel="stylesheet" />
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  
+  <!-- Link to your CSS folder -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -50,51 +52,30 @@
         <article class="service-card">
           <i class="fas fa-truck-medical" aria-hidden="true"></i>
           <h3>Rescue &amp; Rehabilitation</h3>
-          <p>We rescue abandoned, abused and injured animals, and provide full veterinary
-             care, sterilisation and rehabilitation before rehoming.</p>
+          <p>We rescue abandoned, abused and injured animals, and provide full veterinary care, sterilisation and rehabilitation.</p>
         </article>
 
         <article class="service-card">
           <i class="fas fa-home" aria-hidden="true"></i>
           <h3>Adoption &amp; Rehoming</h3>
-          <p>We match every animal with a carefully screened forever home. Meet-and-greets
-             and home checks ensure the best fit for both pet and family.</p>
+          <p>We match every animal with a carefully screened forever home. Meet-and-greets ensure the best fit.</p>
         </article>
 
         <article class="service-card">
           <i class="fas fa-people-roof" aria-hidden="true"></i>
           <h3>Foster Care Programme</h3>
-          <p>Foster families give animals a safe, loving home environment while they
-             wait for adoption — we provide food, vet care and support.</p>
-        </article>
-
-        <article class="service-card">
-          <i class="fas fa-graduation-cap" aria-hidden="true"></i>
-          <h3>Community Education</h3>
-          <p>We run school visits, community workshops and awareness campaigns about
-             responsible pet ownership, sterilisation and animal welfare.</p>
-        </article>
-
-        <article class="service-card">
-          <i class="fas fa-syringe" aria-hidden="true"></i>
-          <h3>Sterilisation Outreach</h3>
-          <p>Free or subsidised sterilisation drives in under-served communities to
-             reduce the number of unwanted litters.</p>
-        </article>
-
-        <article class="service-card">
-          <i class="fas fa-bone" aria-hidden="true"></i>
-          <h3>Food &amp; Supply Support</h3>
-          <p>We distribute pet food and supplies to vulnerable pet owners, keeping
-             animals with their families wherever possible.</p>
+          <p>Foster families give animals a safe, loving home environment while they wait for adoption.</p>
         </article>
       </div>
     </section>
 
-    <!-- Adoptable Pets -->
+    <!-- Adoptable Pets (Part 3 Dynamic Content) -->
     <section class="content-block" aria-labelledby="pets-heading">
       <h2 id="pets-heading"><i class="fas fa-paw"></i> Adoptable Pets</h2>
       <p class="section-sub">These animals are currently looking for their forever homes.</p>
+
+      <!-- SEARCH BAR (Part 3) -->
+      <input type="text" id="pet-search" class="search-bar" placeholder="Search by name or breed...">
 
       <!-- Filter buttons -->
       <div class="filter-bar" role="group" aria-label="Filter pets by type">
@@ -104,65 +85,67 @@
       </div>
 
       <div class="pet-grid" id="pet-grid">
+        <!-- Pet 1 -->
         <article class="pet-card" data-type="dog">
-          <div class="pet-emoji" aria-hidden="true">🐕</div>
+          <!-- Link to images folder -->
+          <img src="images/dog1.jpg" alt="Max, a 2-year-old Lab mix" style="width: 100%; height: 250px; object-fit: cover; border-radius: 12px; margin-bottom: 15px;">
           <h4>Max</h4>
           <p class="pet-detail"><i class="fas fa-dog"></i> 2 years · Male · Lab mix</p>
           <p>Friendly, energetic, great with children and other dogs.</p>
-          <a href="enquiry.html" class="btn-outline">Enquire about Max</a>
+          <button class="btn-outline view-pet-btn">View Profile</button>
         </article>
 
+        <!-- Pet 2 -->
         <article class="pet-card" data-type="cat">
-          <div class="pet-emoji" aria-hidden="true">🐈</div>
+          <img src="images/cat1.jpg" alt="Luna, a 1-year-old Tabby cat" style="width: 100%; height: 250px; object-fit: cover; border-radius: 12px; margin-bottom: 15px;">
           <h4>Luna</h4>
           <p class="pet-detail"><i class="fas fa-cat"></i> 1 year · Female · Tabby</p>
           <p>Gentle, affectionate and loves lap cuddles.</p>
-          <a href="enquiry.html" class="btn-outline">Enquire about Luna</a>
+          <button class="btn-outline view-pet-btn">View Profile</button>
         </article>
 
+        <!-- Pet 3 -->
         <article class="pet-card" data-type="dog">
-          <div class="pet-emoji" aria-hidden="true">🐕</div>
+          <img src="images/dog2.jpg" alt="Buddy, a 4-year-old Terrier" style="width: 100%; height: 250px; object-fit: cover; border-radius: 12px; margin-bottom: 15px;">
           <h4>Buddy</h4>
           <p class="pet-detail"><i class="fas fa-dog"></i> 4 years · Male · Terrier</p>
           <p>Loyal, playful, loves beach walks and belly rubs.</p>
-          <a href="enquiry.html" class="btn-outline">Enquire about Buddy</a>
+          <button class="btn-outline view-pet-btn">View Profile</button>
         </article>
 
+        <!-- Pet 4 -->
         <article class="pet-card" data-type="cat">
-          <div class="pet-emoji" aria-hidden="true">🐱</div>
+          <img src="images/cat2.jpg" alt="Cleo, a 3-year-old Calico cat" style="width: 100%; height: 250px; object-fit: cover; border-radius: 12px; margin-bottom: 15px;">
           <h4>Cleo</h4>
           <p class="pet-detail"><i class="fas fa-cat"></i> 3 years · Female · Calico</p>
           <p>Independent, curious and a champion sunbather.</p>
-          <a href="enquiry.html" class="btn-outline">Enquire about Cleo</a>
+          <button class="btn-outline view-pet-btn">View Profile</button>
         </article>
-
+        
+        <!-- Pet 5 -->
         <article class="pet-card" data-type="dog">
-          <div class="pet-emoji" aria-hidden="true">🐶</div>
+          <img src="images/dog3.jpg" alt="Rosie, a 6-month-old puppy" style="width: 100%; height: 250px; object-fit: cover; border-radius: 12px; margin-bottom: 15px;">
           <h4>Rosie</h4>
           <p class="pet-detail"><i class="fas fa-dog"></i> 6 months · Female · Mixed</p>
           <p>Playful puppy with endless energy and love to give.</p>
-          <a href="enquiry.html" class="btn-outline">Enquire about Rosie</a>
-        </article>
-
-        <article class="pet-card" data-type="cat">
-          <div class="pet-emoji" aria-hidden="true">🐈‍⬛</div>
-          <h4>Shadow</h4>
-          <p class="pet-detail"><i class="fas fa-cat"></i> 2 years · Male · Black DSH</p>
-          <p>Sleek, quiet and very affectionate once he trusts you.</p>
-          <a href="enquiry.html" class="btn-outline">Enquire about Shadow</a>
+          <button class="btn-outline view-pet-btn">View Profile</button>
         </article>
       </div>
+
+      <!-- No Results Message (Hidden by default) -->
+      <p id="no-results" style="display: none; text-align: center; font-weight: bold; margin-top: 20px; color: var(--clr-error);">
+        No pets found matching your search.
+      </p>
     </section>
 
     <!-- Adoption Process -->
     <section class="content-block" aria-labelledby="process-heading">
       <h2 id="process-heading"><i class="fas fa-list-check"></i> How Adoption Works</h2>
-      <ol class="process-list">
+      <ol class="process-list" style="margin-left: 20px; color: var(--clr-text-muted);">
         <li><strong>Browse &amp; enquire:</strong> Find a pet you connect with and submit an enquiry.</li>
         <li><strong>Meet &amp; greet:</strong> We arrange a meeting at our centre or via a foster home.</li>
         <li><strong>Home check:</strong> A volunteer visits your home to ensure a safe environment.</li>
         <li><strong>Adoption fee:</strong> A contribution covers sterilisation, vaccination and microchipping.</li>
-        <li><strong>Welcome home:</strong> You take your new family member home. We follow up at 1 month and 6 months.</li>
       </ol>
     </section>
 
@@ -174,6 +157,21 @@
     </section>
 
   </main>
+
+  <!-- ============ MODAL OVERLAY (Part 3 Lightbox) ============ -->
+  <div id="pet-modal" class="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      
+      <!-- The image tag inside the modal -->
+      <img id="modal-img" src="" alt="Pet image" style="width: 100%; height: 300px; object-fit: cover; border-radius: 12px; margin-bottom: 15px;">
+      
+      <h2 id="modal-title">Pet Name</h2>
+      <p id="modal-desc">Description goes here...</p>
+      
+      <a href="enquiry.html" class="btn-primary" style="margin-top: 15px;">Enquire Now</a>
+    </div>
+  </div>
 
   <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
@@ -191,7 +189,6 @@
         <div class="footer-col">
           <h4>Visit Us</h4>
           <a href="contact.html"><i class="fas fa-map-pin"></i> 123 Rescue Lane, Cape Town</a>
-          <a href="contact.html"><i class="fas fa-store"></i> Mobile adoption events</a>
           <a href="tel:+27215550199"><i class="fas fa-phone"></i> (021) 555-0199</a>
           <a href="mailto:info@ctars.org.za"><i class="fas fa-envelope"></i> info@ctars.org.za</a>
         </div>
@@ -201,20 +198,18 @@
           <div class="social-icons">
             <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
             <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
           </div>
           <p class="footer-note"><i class="fas fa-heart"></i> Every animal matters</p>
         </div>
       </div>
 
       <div class="footer-bottom">
-        &copy; 2026 CTARS – Cape Town Animal Rescue Society. Made with
-        <i class="fas fa-paw"></i> and dedication.
+        &copy; 2026 CTARS – Cape Town Animal Rescue Society.
       </div>
     </div>
   </footer>
 
+  <!-- Link to your JS folder -->
   <script src="js/script.js"></script>
 </body>
 </html>
